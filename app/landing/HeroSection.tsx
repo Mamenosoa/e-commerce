@@ -3,12 +3,12 @@ import { Navbar } from "../ui/Navbar";
 import image from '@/public/sneakers.png'
 export function Hero(){
     return(<>                     
-        <div className="flex w-full h-screen pb-xl pt-sm relative max-h-[800px]  ">
+        <div className="flex w-full h-screen pb-xl max-md:h-[620px]  pt-sm relative max-h-[768px]  ">
            {/* <div className="relative "> */}
-                <div className=" flex flex-col  justify-between  ">
+                <div className=" flex flex-col   justify-between  ">
                                 <Navbar/>
-                            <div className="min-md:max-w-[510px] max-lg:w-[780px] relative">
-                                <p className="text-sm mb-sm max-md:text-sm">A NEW, APPROACHABLE FACE FOR YOUR ENVIRONMENTALE CONSCIOUS SHOPPING</p>
+                            <div className="min-md:max-w-[510px] max-lg:max-w-[780px] relative">
+                                <p className="text-sm text-bold mb-sm max-md:text-sm">A NEW, APPROACHABLE FACE FOR YOUR ENVIRONMENTALE CONSCIOUS SHOPPING</p>
                                 <p className="text-6xl mb-lg max-md:text-4xl max-lg:w-full ">Enjoy limeted series sneakers without limitations</p>
                                 <button className="mb-lg px-lg py-4 border-2 rounded-full max-md:text-sm  border-[#FFAF00]">SHOP NOW</button>
                                 <div className=" w-64 border-2 pl-sm py-sm rounded-xl bg-[#E2E5FF] ">
