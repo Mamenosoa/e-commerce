@@ -31,6 +31,9 @@ const config: Config = {
         'sm':'16px',
         'lg':'32px',
         'xl':'64px'
+      },
+      width:{
+        '100':'400px'
       }
     },
   },
