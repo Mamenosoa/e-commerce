@@ -6,8 +6,8 @@ import { Carouselles } from "../ui/Carousel";
 import { ButtonCutsom } from "../ui/button";
 export function Hero(){
     return(<>                     
-        <div className="flex w-full h-screen pb-xl pt-sm relative screen   max-h-[850px] ">   
-                <div className=" flex flex-col gap-28  relative w-full">
+        <div className="flex w-full  h-screen ajuste pb-xl pt-sm relative screen min-h-[613px]   max-h-[850px] ">   
+                <div className=" flex flex-col justify-between relative w-full">
                                 <Navbar/>
                             <div className="w-[370px] md:w-[490px]  lg:w-[510px] relative">
                                  <p className="text-sm text-bold mb-sm">A NEW, APPROACHABLE FACE FOR YOUR ENVIRONMENTALE CONSCIOUS SHOPPING</p>

@@ -33,8 +33,19 @@
     
   }
 }
-@media screen and (max-height:728px){
+@media screen and (max-height:664px){
   .screen{
-    height: 750px!important;
+    /* height: 664px!important; */
+    padding: 0;
+  }
+  .ajuste{  
+    padding-bottom: 0px !important;
+    
+  }
+}
+@media screen and (max-height:613px){
+  .screen{
+    height: 664px!important;
+    padding: 0;
   }
 }
