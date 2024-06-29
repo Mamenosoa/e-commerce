@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 :root{
-    --primary:'#FFAF00'
+    /* --primary:#FFAF00; */
+    --accent:#FFAF00
 }
 *{
     box-sizing: border-box;
+}
+.borders{
+  border: 1px solid black;
 }
 .body{
     margin: 0;
@@ -13,4 +17,24 @@
     position: relative;
     display: flex;
     justify-content: center;
+}
+/* @media only screen and (max-height: 650px) {
+  .screen{
+    height: auto!important;
+  }
+}*/
+@media only screen and (max-height: 412px) {
+  .test{
+    height: 100%!important;
+  }
+  .test2{
+    height: 400px!important;
+    background: red;
+    
+  }
+}
+@media screen and (max-height:728px){
+  .screen{
+    height: 750px!important;
+  }
 }

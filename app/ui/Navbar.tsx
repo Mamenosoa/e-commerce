@@ -1,6 +1,6 @@
 export function Navbar(){
     return(<>
-        <div className="flex justify-between items-center py-sm">
+        <div className="flex justify-between items-center py-sm ">
             <div className="">
                 <svg width="232" height="62" viewBox="0 0 232 62" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="2.5" y="2.5" width="66" height="57" stroke="black" stroke-width="5"/>
@@ -22,7 +22,7 @@ export function Navbar(){
 </defs>
 </svg>
 </div>
-            <div className="navbar-items">
+            <div className="navbar-items hidden md:block">
                 <ul className="flex gap-4 mr-7">
                     <li className="text-sm font-bold underline-offset-2 underline">SHOP</li>
                     <li className="text-sm ">MEN</li>
