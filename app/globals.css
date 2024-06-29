@@ -23,12 +23,12 @@
     height: auto!important;
   }
 }*/
-@media only screen and (max-height: 412px) {
+@media only screen and (max-height: 500px) {
   .test{
     height: 100%!important;
   }
   .test2{
-    height: 400px!important;
+    height: 450px!important;
     background: red;
     
   }
