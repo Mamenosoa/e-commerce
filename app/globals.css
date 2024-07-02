@@ -39,13 +39,16 @@
     padding: 0;
   }
   .ajuste{  
-    padding-bottom: 0px !important;
-    
+    padding: 0px !important;
   }
 }
-@media screen and (max-height:613px){
+@media screen and (max-height:578px){
   .screen{
     height: 664px!important;
     padding: 0;
   }
 }
+/* @keyframe underline-anime{
+  from {width: 0;}
+  to {width: 100%;}
+} */

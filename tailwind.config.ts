@@ -50,13 +50,26 @@ const config: Config = {
         'xl':'64px'
       },
       width:{
-        '100':'400px'
-        ,'lg':'90%',
+        '100':'400px',
+        'lg':'90%',
         'sm':"97%"
       },
       height:{
         'md':"620px",
         'xl':'768px'
+      },
+      keyframes:{
+        underlineAnimate:{
+          "0%":{
+            width:"50px"
+          },
+          "100%":{
+          width:"100%"
+          }
+        },
+       },
+       animation:{
+        "underline": "underlineAnimate 0.3s  forwards",
       }
     },
   },

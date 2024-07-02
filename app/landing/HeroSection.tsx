@@ -6,11 +6,12 @@ import { Carouselles } from "../ui/Carousel";
 import { ButtonCutsom } from "../ui/button";
 export function Hero(){
     return(<>                     
-        <div className="flex w-full  md:h-screen  ajuste md:pb-xl md:pt-sm mb-12 relative screen min-h-[613px] max-h-[850px] ">   
-                <div className=" flex flex-col md:justify-between relative w-full justify-start gap-32  ">
+        {/* <div className="flex w-full   md:h-screen  ajuste md:pb-xl md:pt-sm mb-12 relative screen min-h-[613px] max-h-[850px] ">    */}
+        <div className="flex w-full h-screen ajuste md:pb-xl md:pt-sm mb-12 relative screen max-h-[850px]">   
+                <div className=" flex flex-col md:justify-between relative w-full justify-start md:gap-0 gap-32  ">
                                 <Navbar/>
                             <div className="w-[370px] md:w-[490px]  lg:w-[510px] relative">
-                                 <p className="text-sm text-bold mb-sm">A NEW, APPROACHABLE FACE FOR YOUR ENVIRONMENTALE CONSCIOUS SHOPPING</p>
+                                 <p className="text-sm  mb-sm">A NEW, APPROACHABLE FACE FOR YOUR ENVIRONMENTALE CONSCIOUS SHOPPING</p>
                                 <p className="text-4xl font-medium mb-lg md:text-5xl xlm:text-6xl xlm:w-[780px]  ">Enjoy limeted series sneakers without limitations</p>
                                 {/* <a className="group mb-lg inline-block rounded-full hover:bg-accent border-2 border-accent  hover:text-white focus:outline-none focus:ring-accent " href="#">
                                         <span
