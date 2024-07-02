@@ -1,5 +1,6 @@
 import { Link } from "@nextui-org/react";
 import { LatestProducts } from "../ui/LatestSneakers";
+// import { LatestProducts } from "../ui/LatestSneakers.tsx";
 // import Link from "next/link";
 export function FeatureProducts(){
 return (<>
