@@ -11,8 +11,10 @@ const config: Config = {
   theme: {
      screens:{
       md:"480px",
+      mdi:"636px",
       lg:"834px",
       lgm:"943px",
+      lgh:"1231px",
       xl:"1024px",
       xlm:"1070px",
       full:"1440px",
@@ -28,15 +30,23 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors:{
-        'accent':'var(--accent)'
+        'accent':'var(--accent)',
+        'bg-1':"var(--bg-1)",
+        'bg-2':"var(--bg-2)",
+      },
+      backgroundColor:{
+        'card':"#D7EEED",
+        'bg-1': "var(--bg-1)"
       },
       fontSize:{
+        "small":"10px",
         'xs':'12px',
         'sm':'14px',
         'base':'16px',
         'lg':'18px',
         'xl':'20px',
         '2xl':'24px',
+        "4xl":"35px",
         'big':'60px'
       },
       margin:{
@@ -48,6 +58,9 @@ const config: Config = {
         'sm':'16px',
         'lg':'32px',
         'xl':'64px'
+      },
+      borderRadius:{
+        '3xl':"20px"
       },
       width:{
         '100':'400px',
@@ -66,7 +79,7 @@ const config: Config = {
           "100%":{
           width:"100%"
           }
-        },
+        }
        },
        animation:{
         "underline": "underlineAnimate 0.3s  forwards",

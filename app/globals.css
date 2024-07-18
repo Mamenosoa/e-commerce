@@ -2,14 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 :root{
-    /* --primary:#FFAF00; */
-    --accent:#FFAF00
+  --accent:"#DDFFFF";
+  --bg-1:#1D2E5C;
+  --bg-2:"#D7EEED";
+  --text-1:"#111113"
+    
+}
+@layer base {
+  h1{
+    @apply text-4xl md:text-5xl xl:text-6xl font-medium mb-3
+  }
+  p{
+    @apply text-small xl:text-sm 
+  }
+  h2{
+    @apply text-xl 
+  }
+  h3{
+    @apply text-3xl font-medium
+  }
 }
 *{
     box-sizing: border-box;
 }
 .borders{
   border: 1px solid black;
+}
+@layer utilities {
+  .title1{
+    @apply md:w-[430px] xl:w-[630px]
+  }
 }
 .body{
     margin: 0;
@@ -18,37 +40,36 @@
     display: flex;
     justify-content: center;
 }
+
 /* @media only screen and (max-height: 650px) {
   .screen{
     height: auto!important;
   }
 }*/
-@media only screen and (max-height: 500px) {
-  .test{
-    height: 100%!important;
-  }
-  .test2{
-    height: 450px!important;
-    background: red;
-    
-  }
-}
-@media screen and (max-height:664px){
-  .screen{
-    /* height: 664px!important; */
-    padding: 0;
-  }
-  .ajuste{  
-    padding: 0px !important;
-  }
-}
-@media screen and (max-height:578px){
-  .screen{
-    height: 664px!important;
-    padding: 0;
-  }
-}
 /* @keyframe underline-anime{
   from {width: 0;}
   to {width: 100%;}
+} */
+header{
+  padding: 0 !important;
+}
+/* .test::before{
+  content: "";
+  position: absolute;
+  background-color: #1D2E5C;
+  z-index: -1;
+  width: 100%;
+  inset: 0  ;
+} */
+/* .ztest{
+  z-index: 2;
+}
+.ztest2{
+  z-index: 1;
+} */
+/* @keyframes Anima {
+  0%{
+    transform: translateY(44px);
+  },
+
 } */

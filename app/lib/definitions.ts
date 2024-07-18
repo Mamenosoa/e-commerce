@@ -4,3 +4,7 @@ export type sneaker = {
     price:number,
     brandname:string
 }
+export type topLists  = {
+    url:string
+    name:string
+}

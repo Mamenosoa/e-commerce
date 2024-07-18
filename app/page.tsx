@@ -1,17 +1,18 @@
-import { Categories } from "./landing/Categories";
-import { FeatureProducts } from "./landing/FeatureProducts";
-import { Hero } from "./landing/HeroSection";
-import { Brands } from "./ui/brands";
+import { Categories } from "./sections/Categories";
+import { FeatureProducts } from "./sections/FeatureProducts";
+import { Hero } from "./sections/HeroSection";
+import { Brands } from "./sections/brands";
+import { Footer } from "./sections/footer";
+import { GenderCollection } from "./sections/genderCollection";
+import { NavbarCustom } from "./ui/Navbar";
 
 export default function Page(){
   return(<>
-   <div className="w-full flex justify-center">
-   <main className="  relative w-[90%] max-w-[1200px] max-md:w-[97%]  md:w-11/12 h-full">
-   <Hero/>
-    <Brands/>
-    <Categories/>
-    <FeatureProducts/>
-   </main>
-   </div>
+    <Hero/>
+     <Brands/>
+     <Categories/>   
+    <FeatureProducts/>    
+    <GenderCollection/>    
+     <Footer/>
   </>)
 }

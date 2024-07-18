@@ -5,7 +5,8 @@ export const ButtonCutsom = extendVariants(Button, {
   variants: {
     // <- modify/add variants
     color: {
-      active: "text-[#000000] border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white   ",
+      active: " bg-[var(--bg-1)] text-white ",
+      normal:" text-black bg-white hover:text-white hover:bg-[var(--bg-1)]"
     },
 }
 });
