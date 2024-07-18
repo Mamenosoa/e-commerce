@@ -3,6 +3,7 @@ import React, { useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import { Sneaker } from './sneaker';
 import { Link } from '@nextui-org/react';
+import Next from '../assets/images/icon/filter/direction.svg'
 export function LatestProducts() {
   const initial = 6
   const [emblaRef,emblaApi] = useEmblaCarousel()
@@ -21,12 +22,12 @@ export function LatestProducts() {
     })}
       </div>
     </div>
-    <div className='max-lg:hidden w-full flex gap-4 mt-2 justify-end'>
-      <button className="embla__prev block" onClick={scrollPrev}>
-        Prev
+    <div className='w-full flex gap-4 mt-2 justify-end'>
+      <button className="embla__prev block"  onClick={scrollPrev}>
+        <Next className="h-full w-ful rotate-180"/>
       </button>
-      <button className="embla__next block" onClick={scrollNext}>
-        Next
+      <button className="embla__next block" onClick={scrollNext}>   
+      <Next className="h-full w-full "/>
       </button>
     </div>
     </>

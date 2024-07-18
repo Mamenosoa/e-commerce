@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ButtonCutsom } from '../ui/button';
 import { sneakersCategories } from '../assets/constants';
+import Next from '../assets/images/icon/filter/direction.svg'
 export function Categories(){
     const [emblaRef,emblaApi] = useEmblaCarousel()
   const scrollPrev = useCallback(() => {
@@ -34,11 +35,11 @@ export function Categories(){
        </div>
       </div>
     <div className='w-full flex gap-4 mt-2 justify-end'>
-      <button className="embla__prev block" onClick={scrollPrev}>
-        Prev
+      <button className="embla__prev block"  onClick={scrollPrev}>
+        <Next className="h-full w-ful rotate-180"/>
       </button>
       <button className="embla__next block" onClick={scrollNext}>   
-        Next
+      <Next className="h-full w-full "/>
       </button>
     </div>
     </div>      
