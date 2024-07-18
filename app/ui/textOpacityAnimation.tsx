@@ -12,7 +12,7 @@ return (<>
 <div className={`${className}`}>
 {text.map((lettre,index)=>{
     console.log(content.length)
-     return <motion.span className= {`${fontSize}`} initial={{opacity:0}} animate={{opacity:1}}   transition={{duration:index/content.length,delay:(duration/content.length)*index}}>{lettre}</motion.span>
+     return <motion.span key={index} className= {`${fontSize}`} initial={{opacity:0}} animate={{opacity:1}}   transition={{duration:index/content.length,delay:(duration/content.length)*index}}>{lettre}</motion.span>
 })}
 </div>
 </>)

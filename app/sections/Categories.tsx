@@ -22,8 +22,8 @@ export function Categories(){
         <h3 className=" w-full  mb-4">Shop By Categories</h3>
     <div className="overflow-hidden w-full relative flex justify-center  h-80 py-2" ref={emblaRef}>
         <div className="w-full relative h-full flex gap-2"> 
-        {sneakersCategories.categories.map((category)=>{
-            return <div className="relative rounded-lg group/category  border-2 flex-shrink-0 basis-[calc(100%-0.5%)] md:basis-[calc(100%/2-0.5%)] lg:basis-[calc(100%/3-0.5%)] h-full overflow-hidden  max-lg:mb-4">
+        {sneakersCategories.categories.map((category,index)=>{
+            return <div key={index} className="relative rounded-lg group/category  border-2 flex-shrink-0 basis-[calc(100%-0.5%)] md:basis-[calc(100%/2-0.5%)] lg:basis-[calc(100%/3-0.5%)] h-full overflow-hidden  max-lg:mb-4">
             <span className="absolute inset-0 bg-black/40"></span>
             <div className="absolute bottom-8 left-8">
                     <Link href="#"><h1 className="text-4xl text-white font-medium mb-2 capitalize">{category.name}</h1></Link>
